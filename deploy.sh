@@ -1,4 +1,9 @@
+#!/bin/bash
 echo "Git Push Starting..."
-git add .
-git commit -m "updated"
+
+cd /Users/evan/Desktop/alphaco_test
+
+# Check out repo
+git add -A
+git commit -m "Automated commit on $(date '+%Y-%m-%d %H:%M:%S')"
 git push
